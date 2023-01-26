@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('switch branch') {
             steps {
-                git branch: 'dev'
+                git url:'https://github.com/roch25/jenkins-demo-1', branch: 'dev'
             }
         }
         stage('Complete training') {
