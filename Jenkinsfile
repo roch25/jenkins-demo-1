@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('switch branch') {
             steps {
-                git 'git branch dev'
+                git branch: 'dev'
             }
         }
         stage('Complete training') {
