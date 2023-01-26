@@ -2,9 +2,9 @@ pipeline {
     agent { label 'jenkins-slave-node-1'}
 
     stages {
-        stage('Complete training') {
+        stage('switch branch') {
             steps {
-                git branch 'dev'
+                git 'git branch dev'
             }
         }
         stage('Complete training') {
