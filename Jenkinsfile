@@ -12,5 +12,11 @@ pipeline {
                 echo 'work'
             }
         }
+        
+         stage('Run index.js') {
+            steps {
+                bat 'node index.js'
+            }
+        }
     }
 }
