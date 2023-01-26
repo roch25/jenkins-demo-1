@@ -4,6 +4,11 @@ pipeline {
     stages {
         stage('Complete training') {
             steps {
+                git branch 'dev'
+            }
+        }
+        stage('Complete training') {
+            steps {
                 echo 'training'
             }
         }
