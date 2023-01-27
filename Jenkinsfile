@@ -13,10 +13,6 @@ pipeline {
             }
         }
         
-         stage('Run index.js') {
-            steps {
-                bat 'node index.js'
-            }
-        }
+        
     }
 }
